@@ -12,8 +12,8 @@ while (num <= 102)
 {
 putchar(num);
 
-          if (num == 57)
-		num += 39;
+if(num == 57)
+	num += 39;
 	++num;
 }
 
