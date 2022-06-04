@@ -7,12 +7,15 @@
  */
 int main(void)
 {
-char x;
-
-for (x = '0'; x <= '15'; ++x)
-putchar(x);
-for (x = 'a'; x <= 'f'; ++x)
-putchar(x);
+int num = 48;
+while (num <= 102)
+{
+	putchar(num);
+	
+	if (num == 57)
+		num += 39;
+	++num;
+}
 
 putchar('\n');
 
