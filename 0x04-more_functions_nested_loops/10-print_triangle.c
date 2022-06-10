@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_triangle - a function that prints a triangle, followed by a new line.
+ * print_triangle - a function that prints a triangle, followed by a nbew line.
  * @size: an input integer
  * Return: Always 0
  */
-void print_traingle(int size)
+void print_triangle(int size)
 {
 	int i = 0, j, n = size - 1;
 
