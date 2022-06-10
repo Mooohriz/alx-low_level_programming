@@ -4,7 +4,7 @@
  * @n: an input integer
  * Return: Always 0
  */
-void print_diagonal(void)
+void print_diagonal(int n)
 {
 	int i = 0, j;
 
