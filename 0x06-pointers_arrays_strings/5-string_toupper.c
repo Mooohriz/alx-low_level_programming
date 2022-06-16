@@ -3,12 +3,11 @@
 * string_toupper - changes lowercase to uppercase
 *@s: string to modify
 *
-*Return: the string that change for uppercase
+*Return: s modified
 */
  char *string_toupper(char *s)
 {
-int i;
-i = 0;
+int i = 0;
 
 while (s[i] != '\0')
 {
