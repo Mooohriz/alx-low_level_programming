@@ -10,7 +10,7 @@
 int i;
 i = 0;
 
-while (str[i] != '\0')
+while (s[i] != '\0')
 {
 if (s[i] >= 96 && s[i] <=123)
 {
