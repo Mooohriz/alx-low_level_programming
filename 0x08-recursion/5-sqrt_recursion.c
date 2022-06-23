@@ -1,13 +1,13 @@
 #include "main.h"
 /**
-*_sqtRecursive - computes the square root recursively doing binary search
+*sqtRecursive - computes the square root recursively doing binary search
 *@start: initial number
 *@end: last number within the limit of number
 *@m: given number
 *Return: 1 if not found sqrroot, else sqrroot
 **/
 
-int _sqtRecursive(int start, int end, int m)
+int sqtRecursive(int start, int end, int m)
 {
 long mid;
 if (end >= start)
