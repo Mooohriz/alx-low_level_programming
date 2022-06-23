@@ -2,7 +2,7 @@
 
 /**
 *_strlen_recursion - main - check the code
-@s: character of a string
+*@s: character of a string
 *Return: always 0.
 */
 
