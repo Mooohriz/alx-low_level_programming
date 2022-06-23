@@ -1,32 +1,41 @@
 #include "main.h"
 /**
-*_sqrt_a - main - check the code
-*@a: number
-*@b: number of power
-*Return: always 0.
-*/
+*_sqtRecursive - computes the square root recursively doing binary search
+*@start: initial number
+*@end: last number within the limit of number
+*@m: given number
+*Return: 1 if not found sqrroot, else sqrroot
+**/
 
-int _sqrt_a(int a, int b)
+int _sqtRecursive(int start, int end, int m)
 {
-	if (b * b == a)
-	{
-		return (b);
-	}
-	else if (b * b > a)
-	{
-		return (-1);
-	}
-		return (sqrt_a(a, b + 1));
+long mid;
+if (end >= start)
+{
+mid = start + (end - start) / 2;
+if (mid *mid == m)
+return (mid);
+
+/*following binary search */
+if (mid *mid > m)
+return (sqtRecursive(start, mid - 1, m));
+if (mid *mid < m)
+return (sqtRecursive(mid + 1, end, m));
+}
+return (-1);
 }
 
 /**
-*_sqrt_recursion - main - check the code
-*@n: number
-*
-*Return: always 0
-*/
+*_sqrt_recursion - finds the natural square root of a number
+*@n: given number
+*Return: square root of n or -1
+**/
 int _sqrt_recursion(int n)
 {
-	return (sqrt_a(n, 0));
+if (n < 0)
+return (-1);
+if (n == 0 || n == 1)
+return (n);
+return (sqtRecursive(2, n, n));
 }
 
