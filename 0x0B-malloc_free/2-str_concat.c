@@ -34,7 +34,8 @@ while (*s1)
 	*ptr++ = *s1++;
 while (*s2)
 	*ptr++ = *s2++;
-*ptr = 0
+*ptr = 0;
 	return (ret);
 }
+
 
