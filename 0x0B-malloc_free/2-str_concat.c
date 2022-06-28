@@ -21,9 +21,9 @@ else
 	s1 = " ";
 
 ptr = s2;
-if (s2)	
+if (s2)
 while (*ptr++)
-		size2++;
+	size2++;
 else
 	s2 = " ";
 ret = malloc(size1 + size2 + 1);
