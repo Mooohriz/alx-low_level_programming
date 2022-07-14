@@ -1,31 +1,23 @@
-#include <stdio.h>
 #include "lists.h"
 
 /**
- * print_list - prints all the elements of a linked list
- * @h: pointer to the list_t list to print
+ * print_listint - prints all the elements of a list.
+ * @h: head of a list.
  *
- * Return: the number of nodes printed
+ * Return: numbers of nodes.
  */
-size_t print_list(const list_t *h)
+size_t print_listint(const listint_t *h)
 {
-	size_t e = 0;
+	size_t nnodes = 0;
 
 	while (h != NULL)
 	{
-		if (h->str == NULL)
-		{
-			printf("[0] (nil)\n");
-			h = h->next;
-		}
-
-		else
-		{
-			printf("[%u] %s\n", h->len, h->str);
-			h = h->next;
-		}
-		e++;
+		printf("%d\n", h->n);
+		h = h->next;
+		nnodes++;
 	}
-	return (e);
+	return (nnodes);
 }
+
+
 
